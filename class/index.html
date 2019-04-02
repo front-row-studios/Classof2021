@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+   <head>
+      <!--Created by- Grace Silverstein / Andrew Lortie / Jeremy Patrick
+      Date started- 3-6-2019 
+      End date- N/A 
+      
+      Main page for the class of 2021 website-->
+      <link rel="stylesheet" type="text/css" href="style.css"/> 
+      <title>Assabet Class of 2021</title>      
+      <img class="z" src="logo.png" alt="Assabet School Logo" width="13%" />
+   </head>
+   
+   <body>
+   
+   <div id="navbar" class="navbar"> <!--tabs-->
+      <a href="index.html" id="a">Home</a>
+      <a href="surveys.html" id="b">Surveys</a>
+      <a href="Homework.html" id="c">Help</a>
+      <a href="events.html" id="d">Events</a>
+   </div>
+   
+   <div id= "inner">
+      <h1>Class of 2021</h1>
+      <hr />
+      
+      
+      <!--quick links-->
+      <div id="quickbar">
+         <iframe src="https://discordapp.com/widget?id=544896039837237249&theme=light" class="box" width="20%" height="200" allowtransparency="true" frameborder="0"></iframe>
+         <a href="homework.html"><img src="samp1.png" class="box" width="20%" height="200"></a>
+         <div id= "boxy" class="box"> </div>
+      </div>
+      
+      <!--instagram--> 
+      <div id="gram">
+         <div class="w3-content w3-section " style="max-width: 300px;">
+            
+            <img class="mySlides" src="insta/a.jpg" style="width:300px; height:300px">
+            <img class="mySlides" src="insta/b.jpg" style="width:300px; height:300px">
+            <img class="mySlides" src="insta/c.jpg" style="width:300px; height:300px">
+            <img class="mySlides" src="insta/d.jpg" style="width:300px; height:300px">
+            <img class="mySlides" src="insta/e.jpg" style="width:300px; height:300px">
+            <img class="mySlides" src="insta/f.jpg" style="width:300px; height:300px">
+            <img class="mySlides" src="insta/g.jpg" style="width:300px; height:300px">
+            <img class="mySlides" src="insta/h.jpg" style="width:300px; height:300px">
+            <img class="mySlides" src="insta/i.jpg" style="width:300px; height:300px">
+            <img class="mySlides" src="insta/j.jpg" style="width:300px; height:300px">
+            <video id="autoplay" class="mySlides" width="300px" muted playinline controls> 
+               <source src="insta/z.mp4" type="video/mp4" >
+            </video>
+            <video id="autoplay" class="mySlides" width="300px" controls autoplay> 
+               <source src="insta/y.mp4" type="video/mp4">
+            </video>
+            <video id="autoplay" class="mySlides" width="300px" controls autoplay> 
+               <source src="insta/x.mp4" type="video/mp4">
+            </video>
+            <video id="autoplay" class="mySlides" width="300px" controls autoplay> 
+               <source src="insta/w.mp4" type="video/mp4">
+            </video>
+         </div>
+
+      </div>
+       
+         <script>
+         <!--image carousel-->
+         var myIndex = 0;
+         carousel();
+
+         function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 7000); // Change image every 7 seconds
+         }
+         
+         document.getElementById('autoplay').play();
+         
+         </script>
+   </div>
+</body>
+</html>
