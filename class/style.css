@@ -7,13 +7,13 @@ body
 @font-face
 {
    font-family: newfont;
-   src: url(LilyScriptOneRegular.tff);
+   src: url(lilyScriptOneRegular.tff) format('truetype');
 }
 
 h1
 {
    font-size: 60px;
-   font-family: newfont;
+   font-family: 'Sofia';
    color: #040a42
 }
 
