@@ -7,13 +7,13 @@ body
 @font-face
 {
    font-family: newfont;
-   src: url(lilyScriptOneRegular.tff) format('truetype');
+   src: url(LilyScriptOneRegular.tff);
 }
 
 h1
 {
    font-size: 60px;
-   font-family: 'Sofia';
+   font-family: newfont;
    color: #040a42
 }
 
@@ -63,6 +63,11 @@ p
 .left
 {
    float: left;
+}
+
+.right
+{
+   float: right;
 }
 
 #gram
