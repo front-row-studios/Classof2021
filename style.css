@@ -86,7 +86,12 @@ p
    background-color: #e5e5e5;
    border-radius: 10px;
 }
-
+#video
+{
+    width:640px;
+    min-height:370px;
+ 
+}
 #boxy
 {
    width: 20%; 
