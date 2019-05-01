@@ -43,6 +43,9 @@ p
    position: fixed;
    top: 3px;
    left: 3px;
+   max-width: 11.5%;
+   height: auto;
+   z-index:-1;
 }
 
 .middle
