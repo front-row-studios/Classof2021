@@ -43,6 +43,9 @@ p
    position: fixed;
    top: 3px;
    left: 3px;
+   max-width: 11.5%;
+   height: auto;
+   z-index:-1;
 }
 
 .middle
@@ -83,7 +86,12 @@ p
    background-color: #e5e5e5;
    border-radius: 10px;
 }
-
+#video
+{
+    width:640px;
+    min-height:370px;
+ 
+}
 #boxy
 {
    width: 20%; 
