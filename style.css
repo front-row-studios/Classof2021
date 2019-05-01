@@ -4,16 +4,17 @@ body
    background-color: #f7f7f7;
 }
 
-@font-face
+@keyframes h 
 {
-   font-family: newfont;
-   src: url(LilyScriptOneRegular.tff);
+   0%   {left: -80px;}
+   25%  {left: 0px;}
+   100% {left: -80px;}
 }
 
 h1
 {
-   font-size: 60px;
-   font-family: newfont;
+   font-size: 80px;
+   font-family: Brush Script MT, Brush Script Std, cursive;
    color: #040a42
 }
 
@@ -36,7 +37,6 @@ p
    font-family: arial;
    padding: 20px;
 }
-
 
 .logo
 {
@@ -115,15 +115,15 @@ p
 }
 /* the tabs VvV */
 #navbar a{
-  position: fixed;
-  left: -80px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 100px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 0 5px 5px 0;
+   position: fixed;
+   left: -80px;
+   transition: 0.3s;
+   padding: 15px;
+   width: 100px;
+   text-decoration: none;
+   font-size: 20px;
+   color: white;
+   border-radius: 0 5px 5px 0;
 }
 
 #navbar a:hover {
@@ -131,21 +131,32 @@ p
 }
 
 #a {
-  top: 190px;
-  background-color: #ffbd29;
+   top: 190px;
+   background-color: #ffbd29;
+   animation-name: h;
+   animation-duration: 2s;
 }
 
 #b {
-  top: 260px;
-  background-color: #091688;
+   top: 260px;
+   background-color: #091688;
+   animation-name: h;
+   animation-duration: 2s;
+   animation-delay: 0.5s;
 }
 
 #c {
-  top: 330px;
-  background-color: #ffbd29;
+   top: 330px;
+   background-color: #ffbd29;
+   animation-name: h;
+   animation-duration: 2s;
+   animation-delay: 1s;
 }
 
 #d {
-  top: 400px;
-  background-color: #091688;
+   top: 400px;
+   background-color: #091688;
+   animation-name: h;
+   animation-duration: 2s;
+   animation-delay: 1.5s;
 }

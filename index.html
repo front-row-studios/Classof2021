@@ -2,21 +2,11 @@
 <html>
 
    <head>
-        <!--
-            ******************************************************************************
-            *																			 *
-            *   Program: Class of 2021 Website					      					 *
-            *																			 *
-            *   Description: Website for the Class of 2021              				 *
-            *																             *
-            *   Author:  (Front Row Studios)											 *
-            *																	    	 *
-            *   Date:	4/4/19															 *
-            *																			 *
-            *   History:	First edition with Block Comments          				     *
-            *															                 *
-            ******************************************************************************
-        -->
+      <!--Created by- Grace Silverstein / Andrew Lortie / Jeremy Patrick
+      Date started- 3-6-2019 
+      End date- N/A 
+      
+      Main page for the class of 2021 website-->
       <link rel="stylesheet" type="text/css" href="style.css"/> 
       <title>Assabet Class of 2021</title> 
       <link rel="shortcut icon" href="logo.png" type="image/x-icon">      
@@ -71,47 +61,11 @@
                <source src="insta/x.mp4" type="video/mp4">
             </video>
             
-            <div class="mar" style="max-width: 300px;"> <!--carasel-->
-               <img class="mySlides" src="insta/a.jpg" style="width:300px; height:300px">
-               <img class="mySlides" src="insta/b.jpg" style="width:300px; height:300px">
-               <img class="mySlides" src="insta/c.jpg" style="width:300px; height:300px">
-               <img class="mySlides" src="insta/d.jpg" style="width:300px; height:300px">
-               <img class="mySlides" src="insta/e.jpg" style="width:300px; height:300px">
-               <img class="mySlides" src="insta/f.jpg" style="width:300px; height:300px">
-               <img class="mySlides" src="insta/g.jpg" style="width:300px; height:300px">
-               <img class="mySlides" src="insta/h.jpg" style="width:300px; height:300px">
-               <img class="mySlides" src="insta/i.jpg" style="width:300px; height:300px">
-               
-               <video id="autoplay" class="mySlides" width="300px" muted playinline controls> 
-                  <source src="insta/z.mp4" type="video/mp4" >
-               </video>
-               <video id="autoplay" class="mySlides" width="300px" controls autoplay> 
-                  <source src="insta/y.mp4" type="video/mp4">
-               </video>
-
-            </div>
          </div>
       </a>
       
       <script>
-      <!-- image carousel -->
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-         var i;
-         var x = document.getElementsByClassName("mySlides");
-         for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-         }
-         myIndex++;
-         if (myIndex > x.length) {myIndex = 1}    
-         x[myIndex-1].style.display = "block";  
-         setTimeout(carousel, 7000); // Change image every 7 seconds
-      }
-      
-      document.getElementById('autoplay').play();
-      
+         document.getElementById('autoplay').play();
       </script>
    </div>
 </body>
