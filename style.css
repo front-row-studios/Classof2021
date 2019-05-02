@@ -1,14 +1,26 @@
 
-body
-{
-   background-color: #f7f7f7;
-}
-
 @keyframes h 
 {
    0%   {left: -80px;}
    25%  {left: 0px;}
    100% {left: -80px;}
+}
+
+body
+{
+   background-color: #f7f7f7;
+}
+
+footer
+{
+   text-align: center;
+   color: #686868;
+}
+
+a
+{
+   text-decoration: none;
+   color: #686868;
 }
 
 h1
@@ -38,15 +50,17 @@ p
    padding: 20px;
 }
 
+/*corner logo*/
 .logo
 {
    position: fixed;
    top: 3px;
    left: 3px;
-   max-width: 11.5%;
    height: auto;
    z-index:-1;
+   width: 12em;
 }
+
 
 .middle
 {
